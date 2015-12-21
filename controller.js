@@ -133,11 +133,12 @@ angularApp.controller('homeController', ['$q', '$scope', '$timeout', '$mdDialog'
 
             $mdDialog.show({
                 scope: $scope,
+                preserveScope:true,
                 templateUrl: 'templates/add.html',
                 parent: angular.element(document.body),
                 targetEvent: $event,
                 clickOutsideToClose: true
-            })
+            });
         };
 
 
@@ -163,11 +164,12 @@ angularApp.controller('homeController', ['$q', '$scope', '$timeout', '$mdDialog'
             
             $mdDialog.show({
                 scope: $scope,
+                preserveScope:true,
                 templateUrl: 'templates/edit.html',
                 parent: angular.element(document.body),
                 targetEvent: $event,
                 clickOutsideToClose: true
-            })
+            });
         };
         
         
