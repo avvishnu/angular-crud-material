@@ -1,0 +1,29 @@
+<md-dialog aria-label="">
+    <md-content class="md-padding">
+
+        <form name="userForm">
+
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Name</label>
+                <input ng-model="user.name">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Email</label>
+                <input ng-model="user.email" type="email">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                <label>Address</label>
+                <input ng-model="user.address">
+            </md-input-container>
+
+            <div layout="row" layout-sm="column" layout-align="left left" >
+                <md-button class="md-raised md-primary"  ng-click="addUser(user)">Save</md-button>
+                <md-button class="md-raised md-warn" ng-click="hideDiaglog();">Cancel</md-button>
+            </div>
+
+        </form>
+
+    </md-content>
+
+</md-dialog>
