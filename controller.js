@@ -47,7 +47,7 @@ angularApp.controller('homeController', ['$q', '$scope', '$timeout', '$mdDialog'
         };
 
         $scope.users = {
-            "count": 3,
+            "count": 6,
             "data": [
                 {   
                     "id":"1",    
@@ -64,6 +64,21 @@ angularApp.controller('homeController', ['$q', '$scope', '$timeout', '$mdDialog'
                     "name": "Rejin",
                     "email": "rejin@digitalbrandgroup.com",
                     "address": "Kazhakoottam"
+                }, {
+                    "id":"4",
+                    "name": "Siju",
+                    "email": "siju@digitalbrandgroup.com",
+                    "address": "Venjarammood"
+                }, {
+                    "id":"5",
+                    "name": "Prejith",
+                    "email": "prejith@digitalbrandgroup.com",
+                    "address": "Trivandrum"
+                }, {
+                    "id":"6",
+                    "name": "Nithin",
+                    "email": "nithin@digitalbrandgroup.com",
+                    "address": "Trivandrum"
                 }
             ]
         };
